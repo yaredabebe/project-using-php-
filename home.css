@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+body{
+    /* max-width: 1350px; */
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+
+.navigathion{
+    /* position: relative; */
+    position: sticky;
+    top: -159px;
+    left: 0;
+    right: 0;
+    width: calc(100% -30px);
+    height: 20vh;
+    transition: 0.35 s;
+    margin: 0 auto;
+    
+   
+
+}
+.image{
+  background-image: url(img/solar.jpg); 
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+}
+.image img{
+    height: 150px;
+    width: 500px;
+    top: 0;
+    left:0;
+    margin-left: 99px;
+    align-items: center;
+    /* position: static; */
+    object-fit: cover;
+    position: relative;
+
+}
+.navigathion .nav-bar{
+    
+    background-color: black; 
+ 
+}
+.active{
+    background: rgb(200, 1, 0);
+    border-radius: 12px;
+}
+.nav-bar ul li:hover{
+    text-decoration:underline rgb(245, 0, 0);
+
+}
+
+.nav-bar ul{
+
+    display: flex;
+    list-style: none;
+    color: white;
+
+}
+.nav-bar ul li {
+   
+    width: 100px;
+    padding: 10px;
+    margin:5px 5px;
+     
+}
+.nav-bar ul li a{
+  
+    text-decoration: none;
+    color: white;
+}
+.mennu1{
+    display: none;
+}
+.nav-bar ul li:hover .mennu1{
+    display: block;
+    position: absolute;
+    background:#242626;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.nav-bar ul li:hover .mennu1 ul{
+ display: block;
+ margin: 12px;
+ 
+}
+.nav-bar ul li:hover .mennu1 ul li{
+    padding: 10px;
+    width: 150px;
+    background: transparent;
+    text-align: left;
+    border-bottom: 1px dotted white;
+    border-radius: 3px;
+}
+
+
+
+
+.icons div{
+   
+    color: rgb(219, 64, 173);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    float: right;
+   text-align: right;
+}
+#menu-btn{
+    display: none;
+}
+.search-form ul{
+ position: absolute;
+ top:100%;
+ right: 9%;
+ background:rgb(181, 187, 180);
+ width: 20rem;
+ display: flex;
+ align-items: center;
+ border-radius: 50px;
+ transform: scaleY(0);
+transform-origin: top;
+
+}
+.navigathion .search-form .active{
+    transform: scaleY(1); 
+   }
+
+.navigathion .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 1rem;
+    text-transform: none;
+    color: black;
+}
+.navigathion .search-form label{
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+}
+.nav-bar.search-form label:hover{
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* foooter */
+
+.footer{
+    background-color: #242626;
+    position: sticky;
+    
+}
+.container{
+    max-width: 4000px;
+    background-color: #242626;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0px 15px;
+    
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    position: relative;
+    margin-top: 5px;
+}
+ul{
+    list-style: none;
+}
+.footer-col h4::before{
+    content: '';
+   background-color: rgb(200, 1, 0);
+   height: 2px;
+   width: 50px;
+   position: absolute;
+   left: 0;
+   box-sizing: border-box;
+   content: '';
+   bottom: -10px;
+}
+.footer-col ul li :not(:last-child){
+    bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffff;
+    display: block;
+    transition: all 0.3s ease;
+}   
+.footer-col ul li a:hover{
+    padding-left: 2px;
+    color: aliceblue;
+    transform: scale(1.1);
+}
+ .footer-col .social a{
+    display:inline-block;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(255, 255, 255,0.2);
+    margin-left:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+}
+.footer-col .social a:hover{
+    color: #ffffffff;
+    transform: scale(1.1);
+    
+}
+@media (max-width:760){
+    .footer-col{
+        margin-bottom: 30px;
+        width: 50%;
+    }
+}
+@media (max-width:560){
+    .footer-col{
+       
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* php  */
+.content1 {
+    position: absolute;
+    width: 20%;
+    height: 100px;
+    margin: 0px auto;
+    padding: 20px;
+    /* border: 1px  #c5147b; */
+    border-style: dotted ;
+    border-color: #fff;
+    background: rgb(158, 36, 138);
+    border-radius: 0px 0px 10px 10px;
+    background-color: #f38bea;
+    left: 1000px;
+    z-index: 1;
+  }
+
+
+
+
+
+  
+  .navigathion.menu-btn{
+    position: absolute;
+    margin: 30px; 
+    padding: 30px;
+    right: 0px;
+    left: 1249px;
+    top: 110px;
+    width: 90px;
+    cursor: pointer;
+    
+}
+ul.search_bar{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    height: 25px;
+    border-radius: 30px;
+    padding: 7px;
+}
+.input_button{
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.4s all;
+    line-height: 40px;
+    width: 0px;
+}
+.btn{
+ float: right;
+ padding: 0;
+ color: rgb(20, 73, 219);
+ align-items: center;
+ width: 30px;
+ height: 30px;
+ text-decoration: none;
+ border-radius: 50px;
+ line-height: 40px;
+}
+.search_bar:hover .input_button{
+   width: 50px; 
+   padding: 2 0px;
+}
+.search_bar:hover .btn{
+    background-color: rgb(5, 5, 5);
+}
+
+
+
